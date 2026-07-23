@@ -43,9 +43,8 @@ function setTheme(theme) {
 }
 
 function initTheme() {
-  const saved     = localStorage.getItem('medicore-theme');
-  const preferred = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-  setTheme(saved || preferred);
+  const saved = localStorage.getItem('medicore-theme');
+  setTheme(saved || 'dark');
 }
 
 document.addEventListener('click', e => {
