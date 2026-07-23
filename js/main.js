@@ -515,3 +515,22 @@ qsa('.gallery-filter').forEach(btn => {
     });
   });
 });
+
+/* ============================================
+   DYNAMIC SCROLL PROGRESS BAR
+   ============================================ */
+document.addEventListener('DOMContentLoaded', () => {
+  const container = document.createElement('div');
+  container.className = 'scroll-progress-container';
+  const bar = document.createElement('div');
+  bar.className = 'scroll-progress-bar';
+  container.appendChild(bar);
+  document.body.appendChild(container);
+
+  window.addEventListener('scroll', () => {
+    const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrolled = height > 0 ? (winScroll / height) * 100 : 0;
+    bar.style.width = scrolled + '%';
+  }, { passive: true });
+});
