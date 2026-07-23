@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery – MediCore Hospital Facilities</title>
+  <meta name="description" content="Explore MediCore Hospital's world-class facilities, patient care areas, surgical suites, diagnostic centers, and more through our photo gallery." />
+  <meta name="keywords" content="hospital gallery, medical facilities, hospital photos, patient care, surgical suite, diagnostics center" />
+  <link rel="icon" type="image/svg+xml" href="../images/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+<div id="preloader"><div class="preloader-logo"><i class="fas fa-heartbeat"></i><span>MediCore</span></div><div class="preloader-bar"><div class="preloader-bar-fill"></div></div></div>
+<nav class="navbar"><div class="navbar-inner">
+  <a href="../index.html" class="navbar-brand"><i class="fas fa-heartbeat"></i><div><span class="brand-name">MediCore</span><span class="brand-sub">Hospital &amp; Research</span></div></a>
+  <ul class="navbar-nav">
+    <li><a href="../index.html" class="nav-link">Home</a></li><li><a href="about.html" class="nav-link">About</a></li>
+    <li><a href="services.html" class="nav-link">Services</a></li><li><a href="doctors.html" class="nav-link">Doctors</a></li>
+    <li><a href="gallery.html" class="nav-link active">Gallery</a></li><li><a href="pricing.html" class="nav-link">Pricing</a></li>
+    <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+    <li><a href="faq.html" class="nav-link">FAQ</a></li><li><a href="contact.html" class="nav-link">Contact</a></li>
+  </ul>
+  <div class="navbar-actions">
+    <button class="theme-toggle" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button>
+    <a href="contact.html" class="btn btn-primary btn-sm"><i class="fas fa-calendar-check"></i> Book Appointment</a>
+  </div>
+  <button class="hamburger" aria-label="Open mobile menu"><span></span><span></span><span></span></button>
+</div></nav>
+<div class="mobile-menu"><nav class="mobile-nav">
+  <a href="../index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a>
+  <a href="doctors.html">Doctors</a><a href="gallery.html" class="active">Gallery</a><a href="pricing.html">Pricing</a>
+  <a href="testimonials.html">Testimonials</a>
+  <a href="faq.html">FAQ</a><a href="contact.html">Contact</a>
+</nav><div class="mobile-menu-actions"><button class="theme-toggle"><i class="fas fa-moon"></i></button><a href="contact.html" class="btn btn-primary btn-sm" style="flex:1;justify-content:center;"><i class="fas fa-calendar-check"></i> Book</a></div></div>
+
+<main>
+<header class="page-hero">
+  <div class="container">
+    <h1>Hospital <span class="text-primary">Gallery</span></h1>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../index.html">Home</a><span class="sep"><i class="fas fa-chevron-right"></i></span><span>Gallery</span>
+    </nav>
+  </div>
+</header>
+
+<section aria-labelledby="gallery-heading">
+  <div class="container text-center">
+    <span class="section-badge">Our Facilities</span>
+    <h2 class="section-title" id="gallery-heading">World-Class <span class="text-primary">Infrastructure</span></h2>
+    <p class="section-subtitle">Explore our state-of-the-art facilities designed for patient comfort, safety, and the highest quality of care.</p>
+
+    <!-- Filter Tabs -->
+    <div style="display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-bottom:36px;" role="tablist" aria-label="Gallery filter">
+      <button class="btn btn-primary btn-sm gallery-filter active" data-filter="all" role="tab" aria-selected="true">All</button>
+      <button class="btn btn-outline btn-sm gallery-filter" data-filter="facilities" role="tab" aria-selected="false">Facilities</button>
+      <button class="btn btn-outline btn-sm gallery-filter" data-filter="care" role="tab" aria-selected="false">Patient Care</button>
+      <button class="btn btn-outline btn-sm gallery-filter" data-filter="team" role="tab" aria-selected="false">Medical Team</button>
+      <button class="btn btn-outline btn-sm gallery-filter" data-filter="equipment" role="tab" aria-selected="false">Equipment</button>
+    </div>
+
+    <div class="gallery-grid" data-aos="fade-up">
+      <div class="gallery-item" data-category="facilities">
+        <img src="https://images.unsplash.com/photo-1587351021355-a479a299d2f9?w=600&q=80" alt="Modern hospital reception and lobby area" loading="lazy" />
+        <div class="gallery-overlay"><i class="fas fa-search-plus" aria-hidden="true"></i></div>
+      </div>
+      <div class="gallery-item" data-category="care">
+        <img src="https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=600&q=80" alt="Doctors providing patient care in ward" loading="lazy" />
+        <div class="gallery-overlay"><i class="fas fa-search-plus" aria-hidden="true"></i></div>
+      </div>
+      <div class="gallery-item" data-category="equipment">
+        <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?w=600&q=80" alt="Advanced MRI scanning equipment" loading="lazy" />
+        <div class="gallery-overlay"><i class="fas fa-search-plus" aria-hidden="true"></i></div>
+      </div>
+      <div class="gallery-item" data-category="team">
+        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&q=80" alt="Medical team meeting and collaboration" loading="lazy" />
+        <div class="gallery-overlay"><i class="fas fa-search-plus" aria-hidden="true"></i></div>
+      </div>
+      <div class="gallery-item" data-category="facilities">
+        <img src="https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=600&q=80" alt="Hospital exterior modern architecture" loading="lazy" />
+        <div class="gallery-overlay"><i class="fas fa-search-plus" aria-hidden="true"></i></div>
+      </div>
+      <div class="gallery-item" data-category="care">
+        <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600&q=80" alt="Nurse attending to patient in hospital room" loading="lazy" />
+        <div class="gallery-overlay"><i class="fas fa-search-plus" aria-hidden="true"></i></div>
+      </div>
+      <div class="gallery-item" data-category="equipment">
+        <img src="https://images.unsplash.com/photo-1530026186672-2cd00ffc50fe?w=600&q=80" alt="Modern surgical theater and operating room" loading="lazy" />
+        <div class="gallery-overlay"><i class="fas fa-search-plus" aria-hidden="true"></i></div>
+      </div>
+      <div class="gallery-item" data-category="team">
+        <img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?w=600&q=80" alt="Doctors consulting and reviewing medical records" loading="lazy" />
+        <div class="gallery-overlay"><i class="fas fa-search-plus" aria-hidden="true"></i></div>
+      </div>
+      <div class="gallery-item" data-category="facilities">
+        <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=600&q=80" alt="Hospital corridors and patient rooms" loading="lazy" />
+        <div class="gallery-overlay"><i class="fas fa-search-plus" aria-hidden="true"></i></div>
+      </div>
+      <div class="gallery-item" data-category="care">
+        <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=600&q=80" alt="Patient recovery room with modern equipment" loading="lazy" />
+        <div class="gallery-overlay"><i class="fas fa-search-plus" aria-hidden="true"></i></div>
+      </div>
+      <div class="gallery-item" data-category="equipment">
+        <img src="https://images.unsplash.com/photo-1628348070889-cb656235b4eb?w=600&q=80" alt="Laboratory and diagnostic equipment" loading="lazy" />
+        <div class="gallery-overlay"><i class="fas fa-search-plus" aria-hidden="true"></i></div>
+      </div>
+      <div class="gallery-item" data-category="team">
+        <img src="https://images.unsplash.com/photo-1511174511562-5f7f18b874f8?w=600&q=80" alt="Medical staff in pediatric ward with children" loading="lazy" />
+        <div class="gallery-overlay"><i class="fas fa-search-plus" aria-hidden="true"></i></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- Lightbox -->
+<div class="lightbox" role="dialog" aria-modal="true" aria-label="Image lightbox">
+  <button class="lightbox-close" aria-label="Close"><i class="fas fa-times"></i></button>
+  <button class="lightbox-prev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+  <img class="lightbox-img" src="" alt="" />
+  <button class="lightbox-next" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+</div>
+
+<section class="newsletter-section"><div class="container"><h2>Subscribe to Our Health Newsletter</h2><p>Health tips and updates delivered to your inbox.</p><form class="newsletter-form" novalidate><input type="email" placeholder="Enter your email address" aria-label="Email" required /><button type="submit"><i class="fas fa-paper-plane"></i> Subscribe</button></form></div></section>
+<footer class="footer"><div class="container"><div class="footer-grid">
+  <div class="footer-brand"><div class="brand"><i class="fas fa-heartbeat"></i><span>MediCore</span></div><p>World-class healthcare with compassion and innovation.</p><div class="footer-social"><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a><a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></div></div>
+  <div class="footer-col"><h4>Quick Links</h4><nav class="footer-links"><a href="../index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="doctors.html">Doctors</a><a href="contact.html">Contact</a></nav></div>
+  <div class="footer-col"><h4>Services</h4><nav class="footer-links"><a href="services.html">Cardiology</a><a href="services.html">Neurology</a><a href="services.html">Orthopedics</a><a href="services.html">Oncology</a><a href="services.html">Emergency</a></nav></div>
+  <div class="footer-col"><h4>Contact</h4><address><div class="footer-contact-item"><i class="fas fa-phone"></i><span><a href="tel:+18005551234" style="color:inherit;">+1 (800) 555-1234</a></span></div><div class="footer-contact-item"><i class="fas fa-envelope"></i><span>info@medicore.com</span></div></address></div>
+</div><div class="footer-bottom"><p>&copy; 2024 MediCore Hospital. All rights reserved.</p><div class="footer-bottom-links"><a href="#">Privacy</a><a href="#">Terms</a></div></div></div></footer>
+<button class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="../js/main.js"></script>
+<script>
+// Gallery filter
+document.querySelectorAll('.gallery-filter').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.gallery-filter').forEach(b => {
+      b.classList.remove('active','btn-primary');
+      b.classList.add('btn-outline');
+      b.setAttribute('aria-selected','false');
+    });
+    btn.classList.add('active','btn-primary');
+    btn.classList.remove('btn-outline');
+    btn.setAttribute('aria-selected','true');
+    const filter = btn.dataset.filter;
+    document.querySelectorAll('.gallery-item').forEach(item => {
+      item.style.display = (filter === 'all' || item.dataset.category === filter) ? '' : 'none';
+    });
+  });
+});
+</script>
+</body>
+</html>
