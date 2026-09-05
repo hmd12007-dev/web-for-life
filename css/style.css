@@ -50,6 +50,9 @@
 html {
   scroll-behavior: smooth;
   font-size: 16px;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -58,7 +61,10 @@ body {
   color: var(--text-dark);
   line-height: 1.7;
   transition: background 0.3s, color 0.3s;
+  width: 100%;
+  max-width: 100%;
   overflow-x: hidden;
+  position: relative;
 }
 
 a {
@@ -71,7 +77,12 @@ a:hover {
   color: var(--primary-dark);
 }
 
-img {
+img,
+svg,
+video,
+canvas,
+iframe,
+object {
   max-width: 100%;
   height: auto;
   display: block;
@@ -99,6 +110,8 @@ p {
 
 section {
   padding: var(--section-pad);
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 /* ---- Utility Classes ---- */
@@ -106,6 +119,7 @@ section {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+  width: 100%;
 }
 
 .text-center {
@@ -759,12 +773,12 @@ textarea.form-control {
 
 .hero-card-1 {
   bottom: 30px;
-  left: -20px;
+  left: 0;
 }
 
 .hero-card-2 {
   top: 30px;
-  right: -20px;
+  right: 0;
 }
 
 .hero-card i {
@@ -1805,7 +1819,7 @@ textarea.form-control {
 .about-exp-badge {
   position: absolute;
   bottom: -20px;
-  right: -20px;
+  right: 0;
   background: var(--primary);
   color: #fff;
   padding: 24px;
@@ -1988,6 +2002,7 @@ textarea.form-control {
     display: none;
   }
 
+  .grid-3,
   .grid-4 {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -2040,6 +2055,8 @@ textarea.form-control {
     visibility: hidden;
     transition: var(--transition);
     z-index: 999;
+    max-height: calc(100vh - var(--navbar-height));
+    overflow-y: auto;
   }
 
   .mobile-menu.open {
@@ -2083,7 +2100,8 @@ textarea.form-control {
   }
 
   .grid-2,
-  .grid-3 {
+  .grid-3,
+  .grid-4 {
     grid-template-columns: 1fr;
   }
 
@@ -2174,6 +2192,8 @@ textarea.form-control {
 
   .btn {
     width: 100%;
+    max-width: 100%;
+    white-space: normal;
     justify-content: center;
     text-align: center;
   }

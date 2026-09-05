@@ -112,7 +112,7 @@
             onChange: (ev) => setDoctor(ev.target.value)
           }, availableDocs.map(d => e('option', { key: d.id, value: d.name }, `${d.name} (${d.specialty})`)))
         ]),
-        e('div', { className: 'form-row', style: { display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px', marginBottom: '20px' } }, [
+        e('div', { className: 'form-row', style: { gap: '16px', marginBottom: '20px' } }, [
           e('div', { key: 'date-col', className: 'form-group' }, [
             e('label', { className: 'form-label' }, 'Date'),
             e('input', { type: 'date', className: 'form-control', value: date, onChange: (ev) => setDate(ev.target.value) })
@@ -139,7 +139,7 @@
           e('label', { className: 'form-label' }, 'Full Name *'),
           e('input', { type: 'text', className: 'form-control', placeholder: 'e.g. John Doe', value: name, onChange: (ev) => setName(ev.target.value), required: true })
         ]),
-        e('div', { className: 'form-row', style: { display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '14px', marginBottom: '14px' } }, [
+        e('div', { className: 'form-row', style: { gap: '14px', marginBottom: '14px' } }, [
           e('div', { key: 'ph', className: 'form-group' }, [
             e('label', { className: 'form-label' }, 'Phone *'),
             e('input', { type: 'tel', className: 'form-control', placeholder: '+1 (555) 000-0000', value: phone, onChange: (ev) => setPhone(ev.target.value), required: true })
