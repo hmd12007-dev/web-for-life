@@ -1,5 +1,5 @@
 Set-Location 'E:\coding site\SMIT Class\Assingments\medical web\medicore-hospital'
 git add -A
-git commit -m "Remove deployment helper scripts (cleanup)"
+git commit -m "Clean up: remove temp scripts"
 git push origin main
-Write-Host "Cleanup pushed!" -ForegroundColor Green
+Write-Host "Done!" -ForegroundColor Green
