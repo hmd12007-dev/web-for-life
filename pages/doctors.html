@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -53,7 +53,8 @@
     <span class="section-badge">500+ Specialists</span>
     <h2 class="section-title" id="doctors-main-heading">Board-Certified <span class="text-primary">Specialists</span></h2>
     <p class="section-subtitle">Every MediCore physician is fellowship-trained, continuously educated, and deeply committed to patient outcomes.</p>
-    <div class="grid grid-4" data-aos="fade-up">
+    <div id="react-doctor-filter-widget"></div>
+    <div class="grid grid-4" data-aos="fade-up" style="margin-top:40px;">
 
       <article class="card doctor-card">
         <div class="doctor-img-wrap">
@@ -217,7 +218,10 @@
   <div class="footer-col"><h4>Services</h4><nav class="footer-links"><a href="services.html">Cardiology</a><a href="services.html">Neurology</a><a href="services.html">Orthopedics</a><a href="services.html">Oncology</a><a href="services.html">Emergency</a></nav></div>
   <div class="footer-col"><h4>Contact</h4><address><div class="footer-contact-item"><i class="fas fa-phone"></i><span><a href="tel:+18005551234" style="color:inherit;">+1 (800) 555-1234</a></span></div><div class="footer-contact-item"><i class="fas fa-envelope"></i><span>info@medicore.com</span></div></address></div>
 </div><div class="footer-bottom"><p>&copy; 2024 MediCore Hospital. All rights reserved.</p><div class="footer-bottom-links"><a href="#">Privacy</a><a href="#">Terms</a></div></div></div></footer>
-<button class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+<!-- React 18 & ReactDOM 18 -->
+<script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+<script src="../js/react-components.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="../js/main.js"></script>
 </body>

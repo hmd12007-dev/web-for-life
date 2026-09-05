@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -446,7 +446,17 @@
   </div>
 </section>
 
-<!-- ========== NEWSLETTER ========== -->
+<!-- ========== REACT APPOINTMENT SECTION ========== -->
+<section style="background:var(--bg-light);" aria-labelledby="react-appointment-heading">
+  <div class="container">
+    <div class="text-center">
+      <span class="section-badge">Fast & Convenient</span>
+      <h2 class="section-title" id="react-appointment-heading">Instant <span class="text-primary">Online Appointment</span></h2>
+      <p class="section-subtitle">Book your consultation with our world-class medical specialists in just a few clicks.</p>
+    </div>
+    <div id="react-appointment-widget" style="max-width:720px;margin:0 auto;"></div>
+  </div>
+</section>
 <section class="newsletter-section" aria-labelledby="newsletter-heading">
   <div class="container">
     <span class="section-badge" style="background:rgba(255,255,255,0.15);color:#fff;">Stay Informed</span>
@@ -550,7 +560,10 @@
   <button class="lightbox-next" aria-label="Next image"><i class="fas fa-chevron-right"></i></button>
 </div>
 
-<!-- Scripts -->
+<!-- React 18 & ReactDOM 18 -->
+<script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+<script src="js/react-components.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="js/main.js"></script>
 </body>

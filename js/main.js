@@ -44,7 +44,7 @@ function setTheme(theme) {
 
 function initTheme() {
   const saved = localStorage.getItem('medicore-theme');
-  setTheme(saved || 'dark');
+  setTheme(saved || 'light');
 }
 
 document.addEventListener('click', e => {

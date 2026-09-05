@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -128,68 +128,11 @@
         </div>
       </div>
 
-      <!-- Contact Form -->
+      <!-- Contact Form & React Appointment Widget -->
       <div class="contact-form-wrap">
         <h3 id="contact-main-heading">Book an Appointment</h3>
-        <p>Fill out the form and our scheduling team will contact you within 24 hours to confirm your appointment.</p>
-        <form id="contactForm" novalidate aria-label="Appointment booking form">
-          <div class="form-row">
-            <div class="form-group">
-              <label class="form-label" for="name">Full Name <span aria-hidden="true" style="color:var(--danger);">*</span></label>
-              <input class="form-control" type="text" id="name" name="name" placeholder="John Smith" autocomplete="name" required aria-required="true" />
-              <span class="form-error" role="alert">Please enter your full name.</span>
-            </div>
-            <div class="form-group">
-              <label class="form-label" for="email">Email Address <span aria-hidden="true" style="color:var(--danger);">*</span></label>
-              <input class="form-control" type="email" id="email" name="email" placeholder="john@example.com" autocomplete="email" required aria-required="true" />
-              <span class="form-error" role="alert">Please enter a valid email address.</span>
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="form-group">
-              <label class="form-label" for="phone">Phone Number</label>
-              <input class="form-control" type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000" autocomplete="tel" />
-              <span class="form-error" role="alert">Please enter a valid phone number.</span>
-            </div>
-            <div class="form-group">
-              <label class="form-label" for="department">Department</label>
-              <select class="form-control" id="department" name="department">
-                <option value="">Select Department</option>
-                <option>Cardiology</option>
-                <option>Neurology</option>
-                <option>Orthopedics</option>
-                <option>Pediatrics</option>
-                <option>Oncology</option>
-                <option>Ophthalmology</option>
-                <option>OB/GYN</option>
-                <option>Pulmonology</option>
-                <option>General Medicine</option>
-                <option>Other</option>
-              </select>
-            </div>
-          </div>
-          <div class="form-group">
-            <label class="form-label" for="subject">Subject <span aria-hidden="true" style="color:var(--danger);">*</span></label>
-            <input class="form-control" type="text" id="subject" name="subject" placeholder="e.g., Book appointment, General inquiry..." required aria-required="true" />
-            <span class="form-error" role="alert">Please enter a subject.</span>
-          </div>
-          <div class="form-group">
-            <label class="form-label" for="preferred_date">Preferred Date</label>
-            <input class="form-control" type="date" id="preferred_date" name="preferred_date" />
-          </div>
-          <div class="form-group">
-            <label class="form-label" for="message">Message <span aria-hidden="true" style="color:var(--danger);">*</span></label>
-            <textarea class="form-control" id="message" name="message" placeholder="Describe your symptoms or the purpose of your visit..." required aria-required="true"></textarea>
-            <span class="form-error" role="alert">Message must be at least 10 characters.</span>
-          </div>
-          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">
-            <i class="fas fa-paper-plane" aria-hidden="true"></i> Send Message
-          </button>
-          <div class="form-success" role="status" aria-live="polite">
-            <i class="fas fa-check-circle" aria-hidden="true"></i>
-            <span>Thank you! Your message has been sent. We'll contact you within 24 hours.</span>
-          </div>
-        </form>
+        <p style="margin-bottom:20px;">Use our interactive React booking system for instant confirmation.</p>
+        <div id="react-appointment-widget"></div>
       </div>
     </div>
   </div>
@@ -203,7 +146,10 @@
   <div class="footer-col"><h4>Services</h4><nav class="footer-links"><a href="services.html">Cardiology</a><a href="services.html">Neurology</a><a href="services.html">Orthopedics</a><a href="services.html">Oncology</a><a href="services.html">Emergency</a></nav></div>
   <div class="footer-col"><h4>Contact</h4><address><div class="footer-contact-item"><i class="fas fa-phone"></i><span><a href="tel:+18005551234" style="color:inherit;">+1 (800) 555-1234</a></span></div><div class="footer-contact-item"><i class="fas fa-envelope"></i><span>info@medicore.com</span></div></address></div>
 </div><div class="footer-bottom"><p>&copy; 2024 MediCore Hospital. All rights reserved.</p><div class="footer-bottom-links"><a href="#">Privacy</a><a href="#">Terms</a></div></div></div></footer>
-<button class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+<!-- React 18 & ReactDOM 18 -->
+<script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+<script src="../js/react-components.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="../js/main.js"></script>
 </body>
